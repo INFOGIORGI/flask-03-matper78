@@ -1,0 +1,28 @@
+{%extends 'base.html'%}
+{%block nav%}
+
+<li><a href="https://it.wikipedia.org/">wikipedia</a></li>
+{%endblock%}
+{%block Capoblock%}
+
+
+
+<table>
+    <tr>
+        <td>nome</td>
+        <td>scaffale</td>
+        <td>prezzo</td>
+    </tr>
+    {%for i in dati%}
+    
+    <tr>
+        <td>{{i[0]}}</td>
+        <td>{{i[1]}}</td>
+        <td>{{i[2]}}</td>
+    </tr>
+
+
+    {%endfor%}
+</table>
+
+{%endblock%}
